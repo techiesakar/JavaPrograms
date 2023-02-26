@@ -11,10 +11,17 @@ class newFruits extends fruits {
     }
 }
 
+class anotherFruits extends newFruits {
+    void rainnyFruit() {
+        System.out.println("WaterMelon");
+    }
+}
+
 public class Inheritance {
     public static void main(String[] args) {
-        newFruits nf = new newFruits();
+        anotherFruits nf = new anotherFruits();
         nf.winterFruit();
         nf.summerFruit();
+        nf.rainnyFruit();
     }
 }
