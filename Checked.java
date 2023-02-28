@@ -1,18 +1,18 @@
-import java.io.*; // Import this class to handle errors
-import java.util.*; // Import the Scanner class to read text files
+import java.io.*;
+import java.util.*;
 
 public class Checked {
     public static void main(String[] args) {
         try {
-            File myObj = new File("aa.txt");
-            Scanner sc = new Scanner(myObj);
+            File myFile = new File("aa.txt");
+            Scanner sc = new Scanner(myFile);
             while (sc.hasNextLine()) {
                 System.out.println(sc.nextLine());
             }
             sc.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
-            // e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("File Not Found");
         }
+
     }
 }

@@ -1,3 +1,4 @@
+// Setting up Thread Priority
 public class ThreadPriority implements Runnable {
     public void run() {
         System.out.println("We are inside run");
