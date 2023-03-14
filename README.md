@@ -16,4 +16,4 @@ Once you have the JDK installed, you can navigate to the directory containing th
 
 ## About the Author
 
-I am a student at Pokhara University studying for my BCA degree. If you have any questions or comments about these programs, feel free to [contact me](https://www.facebook.com/techiesakar)
+I am a student at Pokhara University studying for my BCA degree. If you have any questions or comments about these programs, feel free to [contact me](https://www.facebook.com/techiesakar/)
