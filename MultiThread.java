@@ -5,11 +5,9 @@ public class MultiThread implements Runnable {
     }
 
     public static void main(String[] args) {
-
-        for (int i = 1; i <= 4; i++) {
-            Thread myObj = new Thread(new MultiThread());
-            myObj.start();
-        }
-
+        Thread myObj1 = new Thread(new MultiThread());
+        Thread myObj2 = new Thread(new MultiThread());
+        myObj1.start();
+        myObj2.start();
     }
 }

@@ -9,6 +9,5 @@ public class ThreadPriority implements Runnable {
         System.out.println("The priority of TH1 is : " + TH1.getPriority());
         TH1.setPriority(10);
         System.out.println("The priority of TH1 is : " + TH1.getPriority());
-
     }
 }
