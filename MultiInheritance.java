@@ -1,35 +1,42 @@
-interface A {
-    void display1();
+interface Flyable {
+    void fly();
 }
 
-interface B {
-    void display2();
+interface Swimmable {
+    void swim();
 }
 
-interface C {
-    void display3();
+class Bird implements Flyable {
+    public void fly() {
+        System.out.println("The bird is flying.");
+    }
 }
 
-class Test implements A, B, C {
-    public void display1() {
-        System.out.println("Display 1");
+class Fish implements Swimmable {
+    public void swim() {
+        System.out.println("The fish is swimming.");
+    }
+}
+
+class Duck implements Flyable, Swimmable {
+    public void fly() {
+        System.out.println("The duck is flying.");
     }
 
-    public void display2() {
-        System.out.println("Display 2");
+    public void swim() {
+        System.out.println("The duck is swimming.");
     }
-
-    public void display3() {
-        System.out.println("Display 3");
-    }
-
 }
 
 public class MultiInheritance {
-    public static void Main(String[] args) {
-        Test mt = new Test();
-        mt.display1();
-        mt.display2();
-        mt.display3();
+    public static void main(String[] args) {
+        Flyable bird = new Bird();
+        Swimmable fish = new Fish();
+        Flyable swimmableDuck = new Duck();
+        Swimmable flyableDuck = new Duck();
+        bird.fly();
+        fish.swim();
+        swimmableDuck.fly();
+        flyableDuck.swim();
     }
 }

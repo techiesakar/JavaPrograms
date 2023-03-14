@@ -12,9 +12,7 @@ public class StoreStudent {
                 System.out.println("Name of " + i + " student");
                 String name = reader.readLine();
                 System.out.println("Address of " + i + " student");
-
                 String address = reader.readLine();
-
                 myFileWriter.write(name + " " + address + " \n");
             }
             myFileWriter.close();
