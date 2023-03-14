@@ -14,6 +14,9 @@ public class StudentRegistrationForm extends JFrame implements ActionListener {
     JTextField nameTextField, emailTextField, phoneTextField;
     JButton submitBtn;
 
+    // For actual Value
+    String name, email, phone;
+
     // Constructor
     public StudentRegistrationForm() {
         // Set Frame Properties
@@ -30,29 +33,30 @@ public class StudentRegistrationForm extends JFrame implements ActionListener {
         nameTextField = new JTextField();
         emailTextField = new JTextField();
         phoneTextField = new JTextField();
-
         submitBtn = new JButton("Submit");
 
+        // Add all components
         add(nameLabel);
         add(nameTextField);
         add(emailLabel);
         add(emailTextField);
         add(phoneLabel);
         add(phoneTextField);
-
         add(submitBtn);
-
+        // addActionListener to submit button
         submitBtn.addActionListener(this);
 
+        // make form visible
         setVisible(true);
     }
 
     public void actionPerformed(ActionEvent e) {
+        // Implementing actionListener
         if (e.getSource() == submitBtn) {
-            String name = nameTextField.getText();
-            String email = emailTextField.getText();
-            String phone = phoneTextField.getText();
-            JOptionPane.showMessageDialog(this, "Form Sublitted");
+            name = nameTextField.getText();
+            email = emailTextField.getText();
+            phone = phoneTextField.getText();
+            JOptionPane.showMessageDialog(this, "Form Submitted");
         }
     }
 

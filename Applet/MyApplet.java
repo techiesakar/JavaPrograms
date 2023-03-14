@@ -1,7 +1,9 @@
+package Applet;
+
 import java.awt.*;
 import java.applet.*;
 
-public class myapp extends Applet {
+public class MyApplet extends Applet {
 
     public void init() {
         Label nLabel = new Label("Name");

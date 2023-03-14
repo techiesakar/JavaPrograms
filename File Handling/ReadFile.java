@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Example {
+public class ReadFile {
     public static void main(String[] args) {
         File file = new File("example.txt");
         BufferedReader reader = null;
